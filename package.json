@@ -1,0 +1,17 @@
+{
+  "name": "cosplay-project",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["cosplay_backend", "cosplay_frontend"],
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"bgBlue.bold,bgMagenta.bold\" \"bun run dev:cosplay_backend\" \"bun run dev:cosplay_frontend\"",
+    "dev:cosplay_backend": "bun run --filter cosplay_backend dev",
+    "dev:cosplay_frontend": "bun run --filter cosplay_frontend dev",
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2"
+  }
+}

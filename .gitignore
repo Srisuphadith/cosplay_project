@@ -1,0 +1,70 @@
+# =========================================================
+# Root .gitignore (React + Vite + Elysia + Bun + PostgreSQL)
+# =========================================================
+
+# --- Node / Bun dependencies ---
+node_modules/
+bun.lockb
+bun.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Build outputs ---
+dist/
+build/
+out/
+tmp/
+temp/
+
+# --- Frontend (Vite / React) ---
+cosplay_frontend/node_modules/
+cosplay_frontend/dist/
+cosplay_frontend/.env
+cosplay_frontend/.DS_Store
+
+# --- Backend (Elysia / Bun) ---
+cosplay_backend/node_modules/
+cosplay_backend/dist/
+cosplay_backend/.env
+cosplay_backend/.DS_Store
+
+# --- Logs ---
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# --- Environment files ---
+.env
+.env.*
+!.env.example
+
+# --- IDE & OS files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- TypeScript ---
+*.tsbuildinfo
+
+# --- Testing ---
+coverage/
+*.spec.ts
+*.test.ts
+jest.config.js
+vitest.config.ts
+
+# --- Misc ---
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# --- Docker (optional, ถ้าใช้) ---
+docker-compose.override.yml
+.docker/
+Dockerfile.dev

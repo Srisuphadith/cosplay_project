@@ -1,0 +1,223 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #888888;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.content_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'cn1' 'cn2' 'cn3' 'cn4' 'cn5' 'cn6';
+  background-color: red;
+  width: 100%;
+  gap: 5px 5px;
+  padding: 10px;
+  
+}
+.cn1{
+  grid-area: 'cn1';
+  border: 1px #1a1a1a solid;
+  background-color: #535bf2;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cn2{
+  grid-area: 'cn2';
+  border: 1px #1a1a1a solid;
+  background-color: #535bf2;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cn3{
+  grid-area: 'cn3';
+  border: 1px #1a1a1a solid;
+  background-color: #535bf2;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cn4{
+  grid-area: 'cn4';
+  border: 1px #1a1a1a solid;
+  background-color: #535bf2;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cn5{
+  grid-area: 'cn5';
+  border: 1px #1a1a1a solid;
+  background-color: #535bf2;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cn6{
+  grid-area: 'cn6';
+  border: 1px #1a1a1a solid;
+  background-color: #535bf2;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* @media (min-width: 1000px) {
+
+} */
+/* @media only screen and (max-width: 700px) {
+    .content_container{
+      grid-template-columns: 1fr 1fr;
+    }
+
+} */
+@media only screen and (max-width: 700px) {
+    .cn1{grid-area: 1/span 1;}
+    .cn2{grid-area: 1/span 2;}
+    .cn3{grid-area: 2/span 2;}
+    .cn4{grid-area: 2/span 1;}
+    .cn5{grid-area: 3/span 1;}
+    .cn6{grid-area: 3/span 2;}
+
+}
+.cosplay{
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.login_b{
+  padding: 0px 30px 0px 30px;
+  border-radius: 10px;
+  box-shadow:  3px 3px 10px #000000;
+
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  background-color: #9EA7FF;
+}
+
+.nav-cos{
+  position: fixed; /* Fixes the div relative to the viewport */
+  top: 0;      
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to right, #6200FF 0%, #10B0D8 26%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* background-color: #10B0D8; */
+  color: #000000;
+  padding-top: 50px;
+}
+.banner{
+  display: flex;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  /* background-color: #535bf2; */
+}
+.banner-content{
+  width: 100%;
+  height: 90%;
+  margin: 20px 20px 0px 20px;
+  background-color: #D9D9D9;
+}
+.btn-regis{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-image: linear-gradient(to right, #94F2FF 0%, #FFA1E7 46%);
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.login-form{
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr;
+  width: 30%;
+  height: fit-content;
+  border-radius: 2rem;
+  background-image: linear-gradient(120deg, #6200FF 10%, #10B0D8 80%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
