@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 import { login } from "../api/api";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -38,9 +37,6 @@ export default function Login() {
                 <Link to="/register">don't have a account</Link>
             </div>
             <ToastContainer />
-
-
-
         </>
     )
 }
