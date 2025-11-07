@@ -6,8 +6,8 @@ export default function Login() {
     //const notify = (mes:string) => toast(mes);
     const navigate = useNavigate()
     async function subHandle() {
-        const user = (document.getElementById("user")as HTMLInputElement).value
-        const pass = (document.getElementById("pass")as HTMLInputElement).value
+        const user = (document.getElementById("user") as HTMLInputElement).value
+        const pass = (document.getElementById("pass") as HTMLInputElement).value
         if (user == "" || pass == "") {
             toast("please fill username and password")
             //alert("please fill username and password")
@@ -26,15 +26,17 @@ export default function Login() {
     }
     return (
         <>
-            <div className="login-form">
-                <h1>Login</h1>
-                <p>username</p>
-                <input id="user" placeholder="username"></input>
-                <p>password</p>
-                <input id="pass" placeholder="password" type="password"></input>
-                <br></br>
-                <button id="b_submit" onClick={subHandle}>login</button>
-                <Link to="/register">don't have a account</Link>
+            <div className="login-container">
+                <div className="login-form">
+                    <h1>Login</h1>
+                    <p>username</p>
+                    <input id="user" placeholder="username"></input>
+                    <p>password</p>
+                    <input id="pass" placeholder="password" type="password"></input>
+                    <br></br>
+                    <button id="b_submit" onClick={subHandle}>login</button>
+                    <Link to="/register">don't have a account</Link>
+                </div>
             </div>
             <ToastContainer />
         </>

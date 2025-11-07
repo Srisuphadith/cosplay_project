@@ -213,11 +213,15 @@ button:focus-visible {
   display: grid;
   padding: 30px;
   grid-template-columns: 1fr;
-  width: 30%;
+  width: 40%;
   height: fit-content;
   border-radius: 2rem;
   background-image: linear-gradient(120deg, #6200FF 10%, #10B0D8 80%);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
+  /* margin-top: 150px; */
+}
+.login-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
